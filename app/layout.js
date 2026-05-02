@@ -19,10 +19,10 @@ export const metadata = {
     siteName: 'Vyom Academy',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1698306642516-9841228dcff3?w=1200&q=85',
+        url: 'https://customer-assets.emergentagent.com/job_business-analyst-hub-6/artifacts/uo20v9aw_image.png',
         width: 1200,
-        height: 630,
-        alt: 'Vyom Academy – Business Analysis Training',
+        height: 1200,
+        alt: 'Vyom Academy – Business Analyst Training Institute',
       },
     ],
     locale: 'en_IN',
@@ -32,7 +32,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Vyom Academy – Business Analysis Training Institute',
     description: 'Become a Job-Ready Business Analyst. Practical, industry-focused training with placement assistance.',
-    images: ['https://images.unsplash.com/photo-1698306642516-9841228dcff3?w=1200&q=85'],
+    images: ['https://customer-assets.emergentagent.com/job_business-analyst-hub-6/artifacts/uo20v9aw_image.png'],
   },
   robots: {
     index: true,
@@ -46,7 +46,7 @@ export const metadata = {
     },
   },
   icons: {
-    icon: '/favicon.ico',
+    icon: 'https://customer-assets.emergentagent.com/job_business-analyst-hub-6/artifacts/uo20v9aw_image.png',
   },
 }
 
@@ -65,23 +65,19 @@ const structuredData = {
   logo: 'https://vyomacademy.com/logo.png',
   description: 'Industry-focused Business Analyst training institute with expert trainers, real projects, and placement assistance.',
   sameAs: [
-    'https://www.linkedin.com/company/vyom-academy',
-    'https://www.facebook.com/vyomacademy',
-    'https://www.instagram.com/vyomacademy',
-    'https://twitter.com/vyomacademy',
+    'https://www.instagram.com/vyoma_cademy',
+    'https://www.linkedin.com/in/vyom-academy-29962b275',
   ],
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Hyderabad',
-    addressRegion: 'TS',
     addressCountry: 'IN',
   },
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+91-9876543210',
+    telephone: '+91-8511890947',
     contactType: 'admissions',
-    email: 'admissions@vyomacademy.com',
-    availableLanguage: ['English', 'Hindi', 'Telugu'],
+    email: 'vyomacademyy@gmail.com',
+    availableLanguage: ['English', 'Hindi'],
   },
   offers: {
     '@type': 'Offer',

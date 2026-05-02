@@ -15,7 +15,6 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion'
 import {
-  GraduationCap,
   BarChart3,
   Database,
   PieChart,
@@ -24,7 +23,6 @@ import {
   Trophy,
   Phone,
   Mail,
-  MapPin,
   CheckCircle2,
   Sparkles,
   Target,
@@ -34,20 +32,28 @@ import {
   Star,
   ArrowRight,
   Linkedin,
-  Facebook,
   Instagram,
-  Twitter,
-  Youtube,
   Menu,
   X,
   Clock,
   IndianRupee,
+  MessageCircle,
 } from 'lucide-react'
 
+const LOGO = 'https://customer-assets.emergentagent.com/job_business-analyst-hub-6/artifacts/uo20v9aw_image.png'
 const HERO_IMG = 'https://images.unsplash.com/photo-1698306642516-9841228dcff3?w=1400&q=85'
 const ABOUT_IMG = 'https://images.unsplash.com/photo-1599585113438-291af1a8d1db?w=1200&q=85'
 const DASH_IMG = 'https://images.unsplash.com/photo-1660020619062-70b16c44bf0f?w=1200&q=85'
 const CORP_IMG = 'https://images.unsplash.com/photo-1718375505849-617bc3755574?w=1200&q=85'
+
+const CONTACT = {
+  phone: '+91 85118 90947',
+  phoneRaw: '+918511890947',
+  email: 'vyomacademyy@gmail.com',
+  instagram: 'https://www.instagram.com/vyoma_cademy',
+  linkedin: 'https://www.linkedin.com/in/vyom-academy-29962b275',
+  whatsapp: 'https://wa.me/918511890947',
+}
 
 const courses = [
   { icon: BarChart3, title: 'Business Analysis Fundamentals', desc: 'Requirements gathering, BRD/FRD, stakeholder management, gap analysis & UML.' },
@@ -192,13 +198,11 @@ const App = () => {
       {/* NAV */}
       <header className="sticky top-0 z-50 bg-white/85 backdrop-blur-md border-b border-slate-200/70">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <a href="#top" onClick={(e) => { e.preventDefault(); scrollTo('top') }} className="flex items-center gap-2">
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-600 to-blue-800 grid place-items-center shadow-md shadow-blue-200">
-              <GraduationCap className="w-5 h-5 text-white" />
-            </div>
+          <a href="#top" onClick={(e) => { e.preventDefault(); scrollTo('top') }} className="flex items-center gap-3">
+            <img src={LOGO} alt="Vyom Academy logo" className="w-11 h-11 rounded-lg object-contain bg-white shadow-sm border border-slate-200" />
             <div className="leading-tight">
               <div className="font-bold text-slate-900">Vyom Academy</div>
-              <div className="text-[10px] text-slate-500 -mt-0.5">Business Analysis Institute</div>
+              <div className="text-[10px] text-slate-500 -mt-0.5 tracking-wide">Bridge Business &amp; Technology</div>
             </div>
           </a>
           <ul className="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-700">
@@ -507,31 +511,40 @@ const App = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Have Questions? We're Here to Help.</h2>
             <p className="mt-4 text-slate-600 text-lg">Speak to our admissions team for course details, fees, batch schedules and personalized career guidance.</p>
             <div className="mt-8 space-y-5">
-              <a href="tel:+919876543210" className="flex items-center gap-4 group">
+              <a href={`tel:${CONTACT.phoneRaw}`} className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-xl bg-blue-100 grid place-items-center group-hover:bg-blue-700 transition">
                   <Phone className="w-5 h-5 text-blue-700 group-hover:text-white transition" />
                 </div>
                 <div>
                   <div className="text-xs text-slate-500 uppercase tracking-wider">Call Us</div>
-                  <div className="font-semibold text-slate-900">+91 98765 43210</div>
+                  <div className="font-semibold text-slate-900">{CONTACT.phone}</div>
                 </div>
               </a>
-              <a href="mailto:admissions@vyomacademy.com" className="flex items-center gap-4 group">
+              <a href={`mailto:${CONTACT.email}`} className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-xl bg-blue-100 grid place-items-center group-hover:bg-blue-700 transition">
                   <Mail className="w-5 h-5 text-blue-700 group-hover:text-white transition" />
                 </div>
                 <div>
                   <div className="text-xs text-slate-500 uppercase tracking-wider">Email Us</div>
-                  <div className="font-semibold text-slate-900">admissions@vyomacademy.com</div>
+                  <div className="font-semibold text-slate-900">{CONTACT.email}</div>
+                </div>
+              </a>
+              <a href={CONTACT.whatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+                <div className="w-12 h-12 rounded-xl bg-green-100 grid place-items-center group-hover:bg-green-600 transition">
+                  <MessageCircle className="w-5 h-5 text-green-700 group-hover:text-white transition" />
+                </div>
+                <div>
+                  <div className="text-xs text-slate-500 uppercase tracking-wider">WhatsApp</div>
+                  <div className="font-semibold text-slate-900">Chat with us instantly</div>
                 </div>
               </a>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-blue-100 grid place-items-center">
-                  <MapPin className="w-5 h-5 text-blue-700" />
+                <div className="w-12 h-12 rounded-xl bg-pink-100 grid place-items-center">
+                  <Instagram className="w-5 h-5 text-pink-600" />
                 </div>
                 <div>
-                  <div className="text-xs text-slate-500 uppercase tracking-wider">Visit Us</div>
-                  <div className="font-semibold text-slate-900">Hitech City, Hyderabad, Telangana 500081</div>
+                  <div className="text-xs text-slate-500 uppercase tracking-wider">Follow Us</div>
+                  <a href={CONTACT.instagram} target="_blank" rel="noopener noreferrer" className="font-semibold text-slate-900 hover:text-blue-700">@vyoma_cademy</a>
                 </div>
               </div>
             </div>
@@ -554,22 +567,27 @@ const App = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
           <div className="grid md:grid-cols-4 gap-10">
             <div className="md:col-span-2">
-              <div className="flex items-center gap-2">
-                <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 grid place-items-center">
-                  <GraduationCap className="w-5 h-5 text-white" />
-                </div>
+              <div className="flex items-center gap-3">
+                <img src={LOGO} alt="Vyom Academy" className="w-11 h-11 rounded-lg object-contain bg-white p-1" />
                 <div>
                   <div className="font-bold text-white">Vyom Academy</div>
-                  <div className="text-[10px] text-slate-400">Business Analysis Institute</div>
+                  <div className="text-[10px] text-slate-400 tracking-wide">Bridge Business &amp; Technology</div>
                 </div>
               </div>
-              <p className="mt-4 text-sm text-slate-400 max-w-md leading-relaxed">India's most trusted Business Analysis training institute. Empowering 5,000+ professionals to launch successful BA careers since 2014.</p>
+              <p className="mt-4 text-sm text-slate-400 max-w-md leading-relaxed">India&apos;s most trusted Business Analyst Training Institute. Empowering 5,000+ professionals to launch successful BA careers.</p>
               <div className="mt-5 flex gap-3">
-                {[Linkedin, Facebook, Instagram, Twitter, Youtube].map((Icon, i) => (
-                  <a key={i} href="#" aria-label="social" className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-blue-700 grid place-items-center transition">
-                    <Icon className="w-4 h-4" />
-                  </a>
-                ))}
+                <a href={CONTACT.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-blue-700 grid place-items-center transition">
+                  <Linkedin className="w-4 h-4" />
+                </a>
+                <a href={CONTACT.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-pink-600 grid place-items-center transition">
+                  <Instagram className="w-4 h-4" />
+                </a>
+                <a href={`mailto:${CONTACT.email}`} aria-label="Email" className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-red-600 grid place-items-center transition">
+                  <Mail className="w-4 h-4" />
+                </a>
+                <a href={CONTACT.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-green-600 grid place-items-center transition">
+                  <MessageCircle className="w-4 h-4" />
+                </a>
               </div>
             </div>
             <div>
@@ -583,9 +601,9 @@ const App = () => {
             <div>
               <h4 className="font-semibold text-white mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-slate-400">
-                <li className="flex items-start gap-2"><Phone className="w-4 h-4 mt-0.5" /> +91 98765 43210</li>
-                <li className="flex items-start gap-2"><Mail className="w-4 h-4 mt-0.5" /> admissions@vyomacademy.com</li>
-                <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5" /> Hitech City, Hyderabad, India</li>
+                <li className="flex items-start gap-2"><Phone className="w-4 h-4 mt-0.5" /> {CONTACT.phone}</li>
+                <li className="flex items-start gap-2"><Mail className="w-4 h-4 mt-0.5" /> {CONTACT.email}</li>
+                <li className="flex items-start gap-2"><Instagram className="w-4 h-4 mt-0.5" /> @vyoma_cademy</li>
               </ul>
             </div>
           </div>
@@ -599,6 +617,17 @@ const App = () => {
           </div>
         </div>
       </footer>
+
+      {/* FLOATING WHATSAPP */}
+      <a
+        href={CONTACT.whatsapp}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
+        className="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 grid place-items-center shadow-2xl shadow-green-300 transition-transform hover:scale-110 animate-pulse"
+      >
+        <MessageCircle className="w-7 h-7 text-white" />
+      </a>
     </div>
   )
 }
