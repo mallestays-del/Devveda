@@ -193,10 +193,9 @@ function LeadForm({ source = 'hero', compact = false, onDone }) {
       )}
       {error && <p className="text-sm text-red-600">{error}</p>}
       <Button type="submit" disabled={status === 'loading'} className="w-full bg-green-600 hover:bg-green-700 text-white h-11 text-base font-semibold">
-        <MessageCircle className="w-4 h-4 mr-2" />
-        {status === 'loading' ? 'Submitting...' : 'Book Free Demo via WhatsApp'} {status !== 'loading' && <ArrowRight className="w-4 h-4 ml-1" />}
+        {status === 'loading' ? 'Submitting...' : 'Book Free Demo'} {status !== 'loading' && <ArrowRight className="w-4 h-4 ml-1" />}
       </Button>
-      <p className="text-xs text-slate-500 text-center">WhatsApp will open with your details pre-filled. Just tap <strong>Send</strong>.</p>
+      <p className="text-xs text-slate-500 text-center">By submitting, you agree to be contacted by Vyom Academy.</p>
     </form>
   )
 }
