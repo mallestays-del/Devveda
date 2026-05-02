@@ -128,6 +128,7 @@ function LeadForm({ source = 'hero', compact = false, onDone }) {
     setStatus('loading')
     setError('')
     try {
+      // 1. Save lead to backend (CRM/MongoDB)
       const res = await fetch('/api/leads', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -135,6 +136,20 @@ function LeadForm({ source = 'hero', compact = false, onDone }) {
       })
       const data = await res.json()
       if (!res.ok) throw new Error(data.error || 'Something went wrong')
+
+      // 2. Build WhatsApp message and open chat to admin
+      const msg =
+        `*New Demo Booking - Vyom Academy*%0A%0A` +
+        `*Name:* ${encodeURIComponent(form.name)}%0A` +
+        `*Phone:* ${encodeURIComponent(form.phone)}%0A` +
+        `*Email:* ${encodeURIComponent(form.email)}%0A` +
+        (form.message ? `*Message:* ${encodeURIComponent(form.message)}%0A` : '') +
+        `*Source:* ${encodeURIComponent(source)}%0A` +
+        `*Time:* ${encodeURIComponent(new Date().toLocaleString('en-IN'))}`
+      const waUrl = `https://wa.me/918511890947?text=${msg}`
+      // Open WhatsApp in a new tab so the user can tap "Send"
+      window.open(waUrl, '_blank', 'noopener,noreferrer')
+
       setStatus('success')
       setForm({ name: '', email: '', phone: '', message: '' })
       onDone?.()
@@ -148,8 +163,8 @@ function LeadForm({ source = 'hero', compact = false, onDone }) {
     return (
       <div className="rounded-xl bg-green-50 border border-green-200 p-6 text-center">
         <CheckCircle2 className="w-10 h-10 text-green-600 mx-auto mb-2" />
-        <h4 className="font-semibold text-green-900">Thank you! We've received your details.</h4>
-        <p className="text-sm text-green-700 mt-1">Our admissions counselor will reach out within 24 hours.</p>
+        <h4 className="font-semibold text-green-900">Almost there! WhatsApp opened in a new tab.</h4>
+        <p className="text-sm text-green-700 mt-1">Just tap <strong>Send</strong> in WhatsApp to confirm your demo booking. Our counselor will reach out within 24 hours.</p>
       </div>
     )
   }
@@ -177,10 +192,11 @@ function LeadForm({ source = 'hero', compact = false, onDone }) {
         </div>
       )}
       {error && <p className="text-sm text-red-600">{error}</p>}
-      <Button type="submit" disabled={status === 'loading'} className="w-full bg-blue-700 hover:bg-blue-800 text-white h-11 text-base font-semibold">
-        {status === 'loading' ? 'Submitting...' : 'Book Free Demo'} {status !== 'loading' && <ArrowRight className="w-4 h-4 ml-1" />}
+      <Button type="submit" disabled={status === 'loading'} className="w-full bg-green-600 hover:bg-green-700 text-white h-11 text-base font-semibold">
+        <MessageCircle className="w-4 h-4 mr-2" />
+        {status === 'loading' ? 'Submitting...' : 'Book Free Demo via WhatsApp'} {status !== 'loading' && <ArrowRight className="w-4 h-4 ml-1" />}
       </Button>
-      <p className="text-xs text-slate-500 text-center">By submitting, you agree to be contacted by Vyom Academy.</p>
+      <p className="text-xs text-slate-500 text-center">WhatsApp will open with your details pre-filled. Just tap <strong>Send</strong>.</p>
     </form>
   )
 }
@@ -470,8 +486,10 @@ const App = () => {
                 <Button onClick={() => scrollTo('contact')} className="bg-white text-blue-700 hover:bg-blue-50 h-12 text-base px-8 font-semibold shadow-xl">
                   Join Now <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
-                <Button onClick={() => scrollTo('contact')} variant="outline" className="border-white text-white bg-transparent hover:bg-white/10 h-12 text-base px-8">
-                  <Phone className="w-4 h-4 mr-2" /> Talk to Counselor
+                <Button asChild variant="outline" className="border-white text-white bg-transparent hover:bg-white/10 h-12 text-base px-8">
+                  <a href={CONTACT.whatsapp} target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="w-4 h-4 mr-2" /> Chat on WhatsApp
+                  </a>
                 </Button>
               </div>
               <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-blue-100">
