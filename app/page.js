@@ -106,7 +106,7 @@ const testimonials = [
 const faqs = [
   { q: 'Do I need a technical background to join the BA course?', a: 'Not at all! Our curriculum is designed for both technical and non-technical learners. We start from the basics and gradually build advanced skills.' },
   { q: 'What is the duration of the Business Analyst course?', a: 'Our flagship BA program runs for 1 month with weekday batches and 2 months with weekend batch options. We also offer a fast-track 2-week intensive cohort.' },
-  { q: 'Will I get a certificate after completion?', a: 'Yes. You will receive an industry-recognized Vyom Academy BA certificate plus help with IIBA ECBA preparation.' },
+  { q: 'Will I get a certificate after completion?', a: 'Yes. Upon successful completion, you will receive an industry-recognized Vyom Academy Business Analyst certificate to showcase your skills to employers.' },
   { q: 'How does placement assistance work?', a: 'After course completion you get unlimited interview calls, mock interviews, resume reviews and 1-on-1 career mentoring until you land a job.' },
   { q: 'Can I attend a free demo before enrolling?', a: 'Absolutely! Book a free live demo session with our senior trainer to experience the teaching style and curriculum firsthand.' },
   { q: 'What is the fee structure and are EMI options available?', a: 'Course fees are highly competitive with 0% EMI options for up to 12 months. Contact our admissions team for current offers and scholarships.' },
