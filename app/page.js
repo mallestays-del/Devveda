@@ -39,7 +39,7 @@ import {
   MessageCircle,
 } from 'lucide-react'
 
-const LOGO = 'https://customer-assets.emergentagent.com/job_business-analyst-hub-6/artifacts/uo20v9aw_image.png'
+const LOGO = 'https://customer-assets.emergentagent.com/job_d53abf6b-9b0b-48d2-a0c0-db0837dd3346/artifacts/exsowbac_WhatsApp%20Image%202026-05-01%20at%203.51.13%20PM.jpeg'
 const HERO_IMG = 'https://images.unsplash.com/photo-1774600122432-dfddc9987ff8?w=1600&q=90'
 const ABOUT_IMG = 'https://images.unsplash.com/photo-1599585113438-291af1a8d1db?w=1200&q=85'
 const DASH_IMG = 'https://images.unsplash.com/photo-1660020619062-70b16c44bf0f?w=1200&q=85'

@@ -19,7 +19,7 @@ export const metadata = {
     siteName: 'Vyom Academy',
     images: [
       {
-        url: 'https://customer-assets.emergentagent.com/job_business-analyst-hub-6/artifacts/uo20v9aw_image.png',
+        url: 'https://customer-assets.emergentagent.com/job_d53abf6b-9b0b-48d2-a0c0-db0837dd3346/artifacts/exsowbac_WhatsApp%20Image%202026-05-01%20at%203.51.13%20PM.jpeg',
         width: 1200,
         height: 1200,
         alt: 'Vyom Academy – Business Analyst Training Institute',
@@ -32,7 +32,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Vyom Academy – Business Analysis Training Institute',
     description: 'Become a Job-Ready Business Analyst. Practical, industry-focused training with placement assistance.',
-    images: ['https://customer-assets.emergentagent.com/job_business-analyst-hub-6/artifacts/uo20v9aw_image.png'],
+    images: ['https://customer-assets.emergentagent.com/job_d53abf6b-9b0b-48d2-a0c0-db0837dd3346/artifacts/exsowbac_WhatsApp%20Image%202026-05-01%20at%203.51.13%20PM.jpeg'],
   },
   robots: {
     index: true,
@@ -46,7 +46,7 @@ export const metadata = {
     },
   },
   icons: {
-    icon: 'https://customer-assets.emergentagent.com/job_business-analyst-hub-6/artifacts/uo20v9aw_image.png',
+    icon: 'https://customer-assets.emergentagent.com/job_d53abf6b-9b0b-48d2-a0c0-db0837dd3346/artifacts/exsowbac_WhatsApp%20Image%202026-05-01%20at%203.51.13%20PM.jpeg',
   },
 }
 
@@ -62,7 +62,7 @@ const structuredData = {
   '@type': 'EducationalOrganization',
   name: 'Vyom Academy – Business Analysis Training Institute',
   url: 'https://vyomacademy.com',
-  logo: 'https://customer-assets.emergentagent.com/job_business-analyst-hub-6/artifacts/uo20v9aw_image.png',
+  logo: 'https://customer-assets.emergentagent.com/job_d53abf6b-9b0b-48d2-a0c0-db0837dd3346/artifacts/exsowbac_WhatsApp%20Image%202026-05-01%20at%203.51.13%20PM.jpeg',
   description: 'Industry-focused Business Analyst training institute with expert trainers, real projects, and placement assistance.',
   sameAs: [
     'https://www.instagram.com/vyoma_cademy',
