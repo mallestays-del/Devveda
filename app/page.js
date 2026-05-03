@@ -21,6 +21,7 @@ import {
   Users,
   Briefcase,
   Trophy,
+  Building2,
   Phone,
   Mail,
   CheckCircle2,
@@ -58,7 +59,7 @@ const CONTACT = {
 const courses = [
   { icon: BarChart3, title: 'Business Analysis Fundamentals', desc: 'Requirements gathering, BRD/FRD, stakeholder management, gap analysis & UML.' },
   { icon: Database, title: 'SQL & Databases', desc: 'Master SQL queries, joins, sub-queries, and database design used in real BA projects.' },
-  { icon: PieChart, title: 'Power BI & Tableau', desc: 'Build interactive dashboards, KPIs and data stories that drive business decisions.' },
+  { icon: Building2, title: 'Domain Training', desc: 'Functional domain understanding across BFSI, Healthcare, Retail and E-commerce industries.' },
   { icon: BarChart3, title: 'Advanced Excel', desc: 'Pivot tables, VLOOKUP, Power Query, dashboards and what-if analysis.' },
   { icon: Rocket, title: 'Agile & Scrum', desc: 'User stories, JIRA, sprints, backlog grooming and Scrum ceremonies.' },
   { icon: Briefcase, title: 'Real-Time Projects', desc: '4+ industry case studies across BFSI, Healthcare, Retail and E-commerce domains.' },
