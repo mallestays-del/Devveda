@@ -338,7 +338,7 @@ const App = () => {
               At <strong>Vyom Academy</strong>, we transform aspiring professionals into confident, industry-ready Business Analysts. With 10+ years of training excellence, our curriculum is engineered by senior BA leaders from global Fortune 500 companies.
             </p>
             <ul className="mt-6 space-y-3">
-              {['Real-world skills taught through live projects', 'Industry-certified expert trainers with 10+ years experience', 'Industry-recognized course completion certificate', 'Dedicated placement support with personalized interview coaching'].map((p) => (
+              {['Real-world skills taught through live projects', 'Industry-certified expert trainers with 10+ years experience', 'Industry-recognized course completion certificate', 'Dedicated placement support with personalized interview guidance'].map((p) => (
                 <li key={p} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                   <span className="text-slate-700">{p}</span>
