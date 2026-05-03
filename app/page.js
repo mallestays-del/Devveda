@@ -69,7 +69,7 @@ const whyUs = [
   { icon: Users, title: 'Industry-Expert Trainers', desc: '10+ years of corporate BA experience from Fortune 500 companies.' },
   { icon: Target, title: 'Hands-On Projects', desc: 'Work on live capstone projects mirroring real client requirements.' },
   { icon: Award, title: 'Resume & Interview Prep', desc: 'Mock interviews, profile building & LinkedIn optimization.' },
-  { icon: ShieldCheck, title: '100% Placement Assistance', desc: 'Dedicated placement cell with 250+ hiring partners.' },
+  { icon: ShieldCheck, title: '100% Placement Assistance', desc: 'Dedicated placement cell with active hiring partners.' },
 ]
 
 const careers = [
@@ -107,14 +107,13 @@ const faqs = [
   { q: 'Do I need a technical background to join the BA course?', a: 'Not at all! Our curriculum is designed for both technical and non-technical learners. We start from the basics and gradually build advanced skills.' },
   { q: 'What is the duration of the Business Analyst course?', a: 'Our flagship BA program runs for 4 months with weekday and weekend batch options. We also offer a fast-track 8-week intensive cohort.' },
   { q: 'Will I get a certificate after completion?', a: 'Yes. You will receive an industry-recognized Vyom Academy BA certificate plus help with IIBA ECBA preparation.' },
-  { q: 'How does placement assistance work?', a: 'We have 250+ hiring partners. After course completion you get unlimited interview calls, mock interviews, resume reviews and 1-on-1 career mentoring until you land a job.' },
+  { q: 'How does placement assistance work?', a: 'After course completion you get unlimited interview calls, mock interviews, resume reviews and 1-on-1 career mentoring until you land a job.' },
   { q: 'Can I attend a free demo before enrolling?', a: 'Absolutely! Book a free live demo session with our senior trainer to experience the teaching style and curriculum firsthand.' },
   { q: 'What is the fee structure and are EMI options available?', a: 'Course fees are highly competitive with 0% EMI options for up to 12 months. Contact our admissions team for current offers and scholarships.' },
 ]
 
 const stats = [
-  { value: '5,000+', label: 'Students Trained' },
-  { value: '250+', label: 'Hiring Partners' },
+  { value: '1,000+', label: 'Students Trained' },
   { value: '95%', label: 'Placement Rate' },
   { value: '4.9★', label: 'Student Rating' },
 ]
@@ -270,7 +269,7 @@ const App = () => {
                 Book Free Demo
               </Button>
             </div>
-            <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-xl">
+            <div className="mt-8 grid grid-cols-3 gap-4 max-w-xl">
               {stats.map((s) => (
                 <div key={s.label}>
                   <div className="text-2xl font-bold text-slate-900">{s.value}</div>
@@ -339,7 +338,7 @@ const App = () => {
               At <strong>Vyom Academy</strong>, we transform aspiring professionals into confident, industry-ready Business Analysts. With 10+ years of training excellence, our curriculum is engineered by senior BA leaders from global Fortune 500 companies.
             </p>
             <ul className="mt-6 space-y-3">
-              {['Real-world skills taught through live projects', 'Industry-certified expert trainers with 10+ years experience', 'End-to-end placement assistance with 250+ hiring partners', 'Lifetime access to learning resources and alumni network'].map((p) => (
+              {['Real-world skills taught through live projects', 'Industry-certified expert trainers with 10+ years experience'].map((p) => (
                 <li key={p} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                   <span className="text-slate-700">{p}</span>
@@ -481,7 +480,7 @@ const App = () => {
             <div className="relative">
               <Sparkles className="w-10 h-10 text-blue-200 mx-auto" />
               <h2 className="mt-4 text-3xl md:text-5xl font-bold text-white leading-tight">Start Your Career in Business Analysis Today</h2>
-              <p className="mt-4 text-blue-100 text-lg max-w-2xl mx-auto">Limited seats for our next batch. Join 5,000+ alumni who launched their dream BA careers with Vyom Academy.</p>
+              <p className="mt-4 text-blue-100 text-lg max-w-2xl mx-auto">Limited seats for our next batch. Join 1,000+ alumni who launched their dream BA careers with Vyom Academy.</p>
               <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
                 <Button onClick={() => scrollTo('contact')} className="bg-white text-blue-700 hover:bg-blue-50 h-12 text-base px-8 font-semibold shadow-xl">
                   Join Now <ArrowRight className="w-4 h-4 ml-2" />
@@ -592,7 +591,7 @@ const App = () => {
                   <div className="text-[10px] text-slate-400 tracking-wide">Bridge Business &amp; Technology</div>
                 </div>
               </div>
-              <p className="mt-4 text-sm text-slate-400 max-w-md leading-relaxed">India&apos;s most trusted Business Analyst Training Institute. Empowering 5,000+ professionals to launch successful BA careers.</p>
+              <p className="mt-4 text-sm text-slate-400 max-w-md leading-relaxed">India&apos;s most trusted Business Analyst Training Institute. Empowering 1,000+ professionals to launch successful BA careers.</p>
               <div className="mt-5 flex gap-3">
                 <a href={CONTACT.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-blue-700 grid place-items-center transition">
                   <Linkedin className="w-4 h-4" />
