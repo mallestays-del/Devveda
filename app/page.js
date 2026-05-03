@@ -259,7 +259,7 @@ const App = () => {
               Become a <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Job-Ready</span><br />Business Analyst
             </h1>
             <p className="mt-6 text-lg text-slate-600 max-w-xl leading-relaxed">
-              Practical, industry-focused training with <strong>real-world projects</strong>, <strong>expert mentors</strong>, and <strong>guaranteed placement support</strong>. Launch your high-paying BA career in just 4 months — no prior tech background required.
+              Practical, industry-focused training with <strong>real-world projects</strong>, <strong>expert mentors</strong>, and <strong>guaranteed placement support</strong>. Launch your high-paying BA career in just 1–2 months — no prior tech background required.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Button onClick={() => scrollTo('contact')} className="bg-blue-700 hover:bg-blue-800 text-white h-12 text-base px-8 shadow-lg shadow-blue-300/40">
