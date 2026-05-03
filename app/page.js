@@ -57,7 +57,7 @@ const CONTACT = {
 }
 
 const courses = [
-  { icon: BarChart3, title: 'Business Analysis Fundamentals', desc: 'Requirements gathering, BRD/FRD, stakeholder management, gap analysis & UML.' },
+  { icon: BarChart3, title: 'Business Analysis Fundamentals', desc: 'Requirements gathering, BRD/FRD, stakeholder management, gap analysis & domain knowledge.' },
   { icon: Database, title: 'SQL & Databases', desc: 'Master SQL queries, joins, sub-queries, and database design used in real BA projects.' },
   { icon: Building2, title: 'Domain Training', desc: 'Functional domain understanding across BFSI, Healthcare, Retail and E-commerce industries.' },
   { icon: BarChart3, title: 'Advanced Excel', desc: 'Pivot tables, VLOOKUP, Power Query, dashboards and what-if analysis.' },
@@ -374,7 +374,7 @@ const App = () => {
             ))}
           </div>
           <div className="mt-10 flex flex-wrap justify-center gap-3 text-sm">
-            {['Excel', 'SQL', 'Power BI', 'Tableau', 'JIRA', 'Confluence', 'BPMN', 'UML', 'Agile', 'Scrum'].map((t) => (
+            {['Excel', 'SQL', 'JIRA', 'Confluence', 'Domain Knowledge', 'Agile', 'Scrum'].map((t) => (
               <span key={t} className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-700 font-medium shadow-sm">{t}</span>
             ))}
           </div>
