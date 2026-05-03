@@ -109,7 +109,6 @@ const faqs = [
   { q: 'Will I get a certificate after completion?', a: 'Yes. Upon successful completion, you will receive an industry-recognized Vyom Academy Business Analyst certificate to showcase your skills to employers.' },
   { q: 'How does placement assistance work?', a: 'After course completion, you receive comprehensive placement support including mock interviews, resume reviews, and 1-on-1 career mentoring — guiding you every step of the way until you land your dream BA role.' },
   { q: 'Can I attend a free demo before enrolling?', a: 'Absolutely! Book a free live demo session with our senior trainer to experience the teaching style and curriculum firsthand.' },
-  { q: 'What is the fee structure and are EMI options available?', a: 'Course fees are highly competitive with 0% EMI options for up to 12 months. Contact our admissions team for current offers and scholarships.' },
 ]
 
 const stats = [
