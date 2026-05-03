@@ -206,12 +206,12 @@ const App = () => {
     <div className="min-h-screen bg-white text-slate-900">
       {/* NAV */}
       <header className="sticky top-0 z-50 bg-white/85 backdrop-blur-md border-b border-slate-200/70">
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <a href="#top" onClick={(e) => { e.preventDefault(); scrollTo('top') }} className="flex items-center gap-3">
-            <img src={LOGO} alt="Vyom Academy logo" className="w-11 h-11 rounded-lg object-contain bg-white shadow-sm border border-slate-200" />
+            <img src={LOGO} alt="Vyom Academy logo" className="w-16 h-16 object-contain" />
             <div className="leading-tight">
-              <div className="font-bold text-slate-900">Vyom Academy</div>
-              <div className="text-[10px] text-slate-500 -mt-0.5 tracking-wide">Bridge Business &amp; Technology</div>
+              <div className="font-bold text-slate-900 text-lg">Vyom Academy</div>
+              <div className="text-[11px] text-slate-500 -mt-0.5 tracking-wide">Bridge Business &amp; Technology</div>
             </div>
           </a>
           <ul className="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-700">
@@ -579,10 +579,10 @@ const App = () => {
           <div className="grid md:grid-cols-4 gap-10">
             <div className="md:col-span-2">
               <div className="flex items-center gap-3">
-                <img src={LOGO} alt="Vyom Academy" className="w-11 h-11 rounded-lg object-contain bg-white p-1" />
+                <img src={LOGO} alt="Vyom Academy" className="w-16 h-16 object-contain bg-white p-1 rounded-lg" />
                 <div>
-                  <div className="font-bold text-white">Vyom Academy</div>
-                  <div className="text-[10px] text-slate-400 tracking-wide">Bridge Business &amp; Technology</div>
+                  <div className="font-bold text-white text-lg">Vyom Academy</div>
+                  <div className="text-[11px] text-slate-400 tracking-wide">Bridge Business &amp; Technology</div>
                 </div>
               </div>
               <p className="mt-4 text-sm text-slate-400 max-w-md leading-relaxed">India&apos;s most trusted Business Analyst Training Institute. Empowering 1,000+ professionals to launch successful BA careers.</p>
