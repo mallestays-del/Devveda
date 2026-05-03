@@ -40,7 +40,7 @@ import {
 } from 'lucide-react'
 
 const LOGO = 'https://customer-assets.emergentagent.com/job_business-analyst-hub-6/artifacts/uo20v9aw_image.png'
-const HERO_IMG = 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1400&q=85'
+const HERO_IMG = 'https://images.unsplash.com/photo-1774600122432-dfddc9987ff8?w=1600&q=90'
 const ABOUT_IMG = 'https://images.unsplash.com/photo-1599585113438-291af1a8d1db?w=1200&q=85'
 const DASH_IMG = 'https://images.unsplash.com/photo-1660020619062-70b16c44bf0f?w=1200&q=85'
 const CORP_IMG = 'https://images.unsplash.com/photo-1718375505849-617bc3755574?w=1200&q=85'
