@@ -10,12 +10,12 @@ export const metadata = {
   authors: [{ name: 'Vyom Academy' }],
   creator: 'Vyom Academy',
   publisher: 'Vyom Academy',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://vyomacademy.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
   alternates: { canonical: '/' },
   openGraph: {
     title: 'Vyom Academy – Business Analysis Training Institute',
     description: 'Become a Job-Ready Business Analyst with practical, industry-focused training. Real-world projects, expert mentors, and placement support.',
-    url: process.env.NEXT_PUBLIC_BASE_URL || 'https://vyomacademy.com',
+    url: process.env.NEXT_PUBLIC_BASE_URL,
     siteName: 'Vyom Academy',
     images: [
       {
@@ -61,7 +61,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'EducationalOrganization',
   name: 'Vyom Academy – Business Analysis Training Institute',
-  url: process.env.NEXT_PUBLIC_BASE_URL || 'https://vyomacademy.com',
+  url: process.env.NEXT_PUBLIC_BASE_URL,
   logo: 'https://customer-assets.emergentagent.com/job_d53abf6b-9b0b-48d2-a0c0-db0837dd3346/artifacts/exsowbac_WhatsApp%20Image%202026-05-01%20at%203.51.13%20PM.jpeg',
   description: 'Industry-focused Business Analyst training institute with expert trainers, real projects, and placement assistance.',
   sameAs: [
