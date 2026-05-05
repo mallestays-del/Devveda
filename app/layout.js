@@ -66,7 +66,7 @@ const structuredData = {
   description: 'Industry-focused Business Analyst training institute with expert trainers, real projects, and placement assistance.',
   sameAs: [
     'https://www.instagram.com/vyoma_cademy',
-    'https://www.linkedin.com/in/vyom-academy-29962b275',
+    'https://www.linkedin.com/in/deveda-academy-29962b275',
   ],
   address: {
     '@type': 'PostalAddress',

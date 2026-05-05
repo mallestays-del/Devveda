@@ -50,7 +50,7 @@ const CONTACT = {
   phoneRaw: '+918511890947',
   email: 'devedaacademy@gmail.com',
   instagram: 'https://www.instagram.com/vyoma_cademy',
-  linkedin: 'https://www.linkedin.com/in/vyom-academy-29962b275',
+  linkedin: 'https://www.linkedin.com/in/deveda-academy-29962b275',
   whatsapp: 'https://wa.me/918511890947',
 }
 
