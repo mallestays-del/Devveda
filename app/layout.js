@@ -4,25 +4,25 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'], display: 'swap' })
 
 export const metadata = {
-  title: 'Vyom Academy – Business Analysis Training Institute | Become a Job-Ready BA',
-  description: 'Vyom Academy offers industry-focused Business Analyst training with real projects, expert trainers, SQL, Excel, JIRA, Agile & Scrum, and 100% placement assistance. Enroll now and launch your BA career.',
-  keywords: ['Business Analyst training', 'BA course', 'Vyom Academy', 'Business Analysis Institute', 'SQL training', 'Agile Scrum', 'Data Analyst course', 'Career in business analysis', 'BA placement assistance'],
-  authors: [{ name: 'Vyom Academy' }],
-  creator: 'Vyom Academy',
-  publisher: 'Vyom Academy',
+  title: 'Deveda Academy – Business Analysis Training Institute | Become a Job-Ready BA',
+  description: 'Deveda Academy offers industry-focused Business Analyst training with real projects, expert trainers, SQL, Excel, JIRA, Agile & Scrum, and 100% placement assistance. Enroll now and launch your BA career.',
+  keywords: ['Business Analyst training', 'BA course', 'Deveda Academy', 'Business Analysis Institute', 'SQL training', 'Agile Scrum', 'Data Analyst course', 'Career in business analysis', 'BA placement assistance'],
+  authors: [{ name: 'Deveda Academy' }],
+  creator: 'Deveda Academy',
+  publisher: 'Deveda Academy',
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://academy-vyom-learn.internal.emergent.host'),
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Vyom Academy – Business Analysis Training Institute',
+    title: 'Deveda Academy – Business Analysis Training Institute',
     description: 'Become a Job-Ready Business Analyst with practical, industry-focused training. Real-world projects, expert mentors, and placement support.',
     url: process.env.NEXT_PUBLIC_BASE_URL || 'https://academy-vyom-learn.internal.emergent.host',
-    siteName: 'Vyom Academy',
+    siteName: 'Deveda Academy',
     images: [
       {
-        url: 'https://customer-assets.emergentagent.com/job_d53abf6b-9b0b-48d2-a0c0-db0837dd3346/artifacts/exsowbac_WhatsApp%20Image%202026-05-01%20at%203.51.13%20PM.jpeg',
+        url: 'https://customer-assets.emergentagent.com/job_2c4eb540-7423-418a-91a3-9287fdd9b7d7/artifacts/rdvsdqgr_WhatsApp%20Image%202026-05-05%20at%201.02.51%20PM.jpeg',
         width: 1200,
         height: 1200,
-        alt: 'Vyom Academy – Business Analyst Training Institute',
+        alt: 'Deveda Academy – Business Analyst Training Institute',
       },
     ],
     locale: 'en_IN',
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Vyom Academy – Business Analysis Training Institute',
+    title: 'Deveda Academy – Business Analysis Training Institute',
     description: 'Become a Job-Ready Business Analyst. Practical, industry-focused training with placement assistance.',
-    images: ['https://customer-assets.emergentagent.com/job_d53abf6b-9b0b-48d2-a0c0-db0837dd3346/artifacts/exsowbac_WhatsApp%20Image%202026-05-01%20at%203.51.13%20PM.jpeg'],
+    images: ['https://customer-assets.emergentagent.com/job_2c4eb540-7423-418a-91a3-9287fdd9b7d7/artifacts/rdvsdqgr_WhatsApp%20Image%202026-05-05%20at%201.02.51%20PM.jpeg'],
   },
   robots: {
     index: true,
@@ -46,7 +46,7 @@ export const metadata = {
     },
   },
   icons: {
-    icon: 'https://customer-assets.emergentagent.com/job_d53abf6b-9b0b-48d2-a0c0-db0837dd3346/artifacts/exsowbac_WhatsApp%20Image%202026-05-01%20at%203.51.13%20PM.jpeg',
+    icon: 'https://customer-assets.emergentagent.com/job_2c4eb540-7423-418a-91a3-9287fdd9b7d7/artifacts/rdvsdqgr_WhatsApp%20Image%202026-05-05%20at%201.02.51%20PM.jpeg',
   },
 }
 
@@ -60,9 +60,9 @@ export const viewport = {
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'EducationalOrganization',
-  name: 'Vyom Academy – Business Analysis Training Institute',
+  name: 'Deveda Academy – Business Analysis Training Institute',
   url: process.env.NEXT_PUBLIC_BASE_URL || 'https://academy-vyom-learn.internal.emergent.host',
-  logo: 'https://customer-assets.emergentagent.com/job_d53abf6b-9b0b-48d2-a0c0-db0837dd3346/artifacts/exsowbac_WhatsApp%20Image%202026-05-01%20at%203.51.13%20PM.jpeg',
+  logo: 'https://customer-assets.emergentagent.com/job_2c4eb540-7423-418a-91a3-9287fdd9b7d7/artifacts/rdvsdqgr_WhatsApp%20Image%202026-05-05%20at%201.02.51%20PM.jpeg',
   description: 'Industry-focused Business Analyst training institute with expert trainers, real projects, and placement assistance.',
   sameAs: [
     'https://www.instagram.com/vyoma_cademy',

@@ -25,7 +25,7 @@ export async function OPTIONS() {
 export async function GET(request, { params }) {
   const path = (params?.path || []).join('/')
   if (path === '' || path === 'health') {
-    return cors(NextResponse.json({ ok: true, service: 'Vyom Academy API' }))
+    return cors(NextResponse.json({ ok: true, service: 'Deveda Academy API' }))
   }
   if (path === 'leads') {
     try {

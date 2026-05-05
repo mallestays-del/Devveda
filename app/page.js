@@ -39,7 +39,7 @@ import {
   MessageCircle,
 } from 'lucide-react'
 
-const LOGO = 'https://customer-assets.emergentagent.com/job_d53abf6b-9b0b-48d2-a0c0-db0837dd3346/artifacts/exsowbac_WhatsApp%20Image%202026-05-01%20at%203.51.13%20PM.jpeg'
+const LOGO = 'https://customer-assets.emergentagent.com/job_2c4eb540-7423-418a-91a3-9287fdd9b7d7/artifacts/rdvsdqgr_WhatsApp%20Image%202026-05-05%20at%201.02.51%20PM.jpeg'
 const HERO_IMG = 'https://images.unsplash.com/photo-1774600122432-dfddc9987ff8?w=1600&q=90'
 const ABOUT_IMG = 'https://images.unsplash.com/photo-1599585113438-291af1a8d1db?w=1200&q=85'
 const DASH_IMG = 'https://images.unsplash.com/photo-1660020619062-70b16c44bf0f?w=1200&q=85'
@@ -81,7 +81,7 @@ const testimonials = [
   {
     name: 'Priya Sharma',
     role: 'Business Analyst @ Deloitte',
-    text: 'Vyom Academy completely transformed my career. The hands-on projects and mock interviews gave me the confidence to crack my dream job within 2 months of completing the course.',
+    text: 'Deveda Academy completely transformed my career. The hands-on projects and mock interviews gave me the confidence to crack my dream job within 2 months of completing the course.',
     rating: 5,
     initials: 'PS',
   },
@@ -104,7 +104,7 @@ const testimonials = [
 const faqs = [
   { q: 'Do I need a technical background to join the BA course?', a: 'Not at all! Our curriculum is designed for both technical and non-technical learners. We start from the basics and gradually build advanced skills.' },
   { q: 'What is the duration of the Business Analyst course?', a: 'Our flagship BA program runs for 1 month with weekday batches and 2 months with weekend batch options. We also offer a fast-track 2-week intensive cohort.' },
-  { q: 'Will I get a certificate after completion?', a: 'Yes. Upon successful completion, you will receive an industry-recognized Vyom Academy Business Analyst certificate to showcase your skills to employers.' },
+  { q: 'Will I get a certificate after completion?', a: 'Yes. Upon successful completion, you will receive an industry-recognized Deveda Academy Business Analyst certificate to showcase your skills to employers.' },
   { q: 'How does placement assistance work?', a: 'After course completion, you receive comprehensive placement support including mock interviews, resume reviews, and 1-on-1 career mentoring — guiding you every step of the way until you land your dream BA role.' },
   { q: 'Can I attend a free demo before enrolling?', a: 'Absolutely! Book a free live demo session with our senior trainer to experience the teaching style and curriculum firsthand.' },
 ]
@@ -134,7 +134,7 @@ function LeadForm({ source = 'hero', compact = false, onDone }) {
       if (!res.ok) throw new Error(data.error || 'Something went wrong')
 
       const msg =
-        `*New Demo Booking - Vyom Academy*%0A%0A` +
+        `*New Demo Booking - Deveda Academy*%0A%0A` +
         `*Name:* ${encodeURIComponent(form.name)}%0A` +
         `*Phone:* ${encodeURIComponent(form.phone)}%0A` +
         `*Email:* ${encodeURIComponent(form.email)}%0A` +
@@ -189,7 +189,7 @@ function LeadForm({ source = 'hero', compact = false, onDone }) {
       <Button type="submit" disabled={status === 'loading'} className="w-full bg-green-600 hover:bg-green-700 text-white h-11 text-base font-semibold">
         {status === 'loading' ? 'Submitting...' : 'Book Free Demo'} {status !== 'loading' && <ArrowRight className="w-4 h-4 ml-1" />}
       </Button>
-      <p className="text-xs text-slate-500 text-center">By submitting, you agree to be contacted by Vyom Academy.</p>
+      <p className="text-xs text-slate-500 text-center">By submitting, you agree to be contacted by Deveda Academy.</p>
     </form>
   )
 }
@@ -208,9 +208,9 @@ const App = () => {
       <header className="sticky top-0 z-50 bg-white/85 backdrop-blur-md border-b border-slate-200/70">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <a href="#top" onClick={(e) => { e.preventDefault(); scrollTo('top') }} className="flex items-center gap-3">
-            <img src={LOGO} alt="Vyom Academy logo" className="w-16 h-16 object-contain" />
+            <img src={LOGO} alt="Deveda Academy logo" className="w-16 h-16 object-contain" />
             <div className="leading-tight">
-              <div className="font-bold text-slate-900 text-lg">Vyom Academy</div>
+              <div className="font-bold text-slate-900 text-lg">Deveda Academy</div>
               <div className="text-[11px] text-slate-500 -mt-0.5 tracking-wide">Bridge Business &amp; Technology</div>
             </div>
           </a>
@@ -319,17 +319,17 @@ const App = () => {
       <section id="about" className="py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <img src={ABOUT_IMG} alt="Vyom Academy training session" className="rounded-2xl shadow-xl w-full h-[420px] object-cover" />
+            <img src={ABOUT_IMG} alt="Deveda Academy training session" className="rounded-2xl shadow-xl w-full h-[420px] object-cover" />
             <div className="absolute -bottom-6 -right-6 bg-blue-700 text-white rounded-2xl p-6 shadow-2xl hidden md:block">
               <div className="text-3xl font-bold">10+</div>
               <div className="text-sm text-blue-100">Years of Excellence</div>
             </div>
           </div>
           <div>
-            <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 border-blue-200 mb-4">About Vyom Academy</Badge>
+            <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 border-blue-200 mb-4">About Deveda Academy</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 leading-tight">India&apos;s Most Trusted Business Analysis Institute</h2>
             <p className="mt-5 text-slate-600 leading-relaxed text-lg">
-              At <strong>Vyom Academy</strong>, we transform aspiring professionals into confident, industry-ready Business Analysts. With 10+ years of training excellence, our curriculum is engineered by senior BA leaders from global Fortune 500 companies.
+              At <strong>Deveda Academy</strong>, we transform aspiring professionals into confident, industry-ready Business Analysts. With 10+ years of training excellence, our curriculum is engineered by senior BA leaders from global Fortune 500 companies.
             </p>
             <ul className="mt-6 space-y-3">
               {['Real-world skills taught through live projects', 'Industry-certified expert trainers with 10+ years experience', 'Industry-recognized course completion certificate', 'Dedicated placement support with personalized interview guidance'].map((p) => (
@@ -379,7 +379,7 @@ const App = () => {
       <section id="why" className="py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 border-blue-200 mb-4">Why Choose Vyom Academy</Badge>
+            <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 border-blue-200 mb-4">Why Choose Deveda Academy</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900">More Than Just Training — A Career Partnership</h2>
           </div>
           <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -440,7 +440,7 @@ const App = () => {
           <div className="text-center max-w-3xl mx-auto">
             <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 border-blue-200 mb-4">Student Success Stories</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Real Stories. Real Careers.</h2>
-            <p className="mt-4 text-slate-600 text-lg">Hear from our alumni about how Vyom Academy transformed their careers.</p>
+            <p className="mt-4 text-slate-600 text-lg">Hear from our alumni about how Deveda Academy transformed their careers.</p>
           </div>
           <div className="mt-12 grid md:grid-cols-3 gap-6">
             {testimonials.map((t) => (
@@ -474,7 +474,7 @@ const App = () => {
             <div className="relative">
               <Sparkles className="w-10 h-10 text-blue-200 mx-auto" />
               <h2 className="mt-4 text-3xl md:text-5xl font-bold text-white leading-tight">Start Your Career in Business Analysis Today</h2>
-              <p className="mt-4 text-blue-100 text-lg max-w-2xl mx-auto">Limited seats for our next batch. Join 1,000+ alumni who launched their dream BA careers with Vyom Academy.</p>
+              <p className="mt-4 text-blue-100 text-lg max-w-2xl mx-auto">Limited seats for our next batch. Join 1,000+ alumni who launched their dream BA careers with Deveda Academy.</p>
               <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
                 <Button onClick={() => scrollTo('contact')} className="bg-white text-blue-700 hover:bg-blue-50 h-12 text-base px-8 font-semibold shadow-xl">
                   Join Now <ArrowRight className="w-4 h-4 ml-2" />
@@ -579,9 +579,9 @@ const App = () => {
           <div className="grid md:grid-cols-4 gap-10">
             <div className="md:col-span-2">
               <div className="flex items-center gap-3">
-                <img src={LOGO} alt="Vyom Academy" className="w-16 h-16 object-contain bg-white p-1 rounded-lg" />
+                <img src={LOGO} alt="Deveda Academy" className="w-16 h-16 object-contain bg-white p-1 rounded-lg" />
                 <div>
-                  <div className="font-bold text-white text-lg">Vyom Academy</div>
+                  <div className="font-bold text-white text-lg">Deveda Academy</div>
                   <div className="text-[11px] text-slate-400 tracking-wide">Bridge Business &amp; Technology</div>
                 </div>
               </div>
@@ -619,7 +619,7 @@ const App = () => {
             </div>
           </div>
           <div className="mt-12 pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-slate-500">
-            <p>© {new Date().getFullYear()} Vyom Academy. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Deveda Academy. All rights reserved.</p>
             <div className="flex gap-5">
               <a href="#" className="hover:text-white">Privacy Policy</a>
               <a href="#" className="hover:text-white">Terms of Service</a>
