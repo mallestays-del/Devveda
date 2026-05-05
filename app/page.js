@@ -49,7 +49,7 @@ const CONTACT = {
   phone: '+91 85118 90947',
   phoneRaw: '+918511890947',
   email: 'devedaacademy@gmail.com',
-  instagram: 'https://www.instagram.com/vyoma_cademy',
+  instagram: 'https://www.instagram.com/devedaacademy',
   linkedin: 'https://www.linkedin.com/in/deveda-academy-29962b275',
   whatsapp: 'https://wa.me/918511890947',
 }
@@ -555,7 +555,7 @@ const App = () => {
                 </div>
                 <div>
                   <div className="text-xs text-slate-500 uppercase tracking-wider">Follow Us</div>
-                  <a href={CONTACT.instagram} target="_blank" rel="noopener noreferrer" className="font-semibold text-slate-900 hover:text-blue-700">@vyoma_cademy</a>
+                  <a href={CONTACT.instagram} target="_blank" rel="noopener noreferrer" className="font-semibold text-slate-900 hover:text-blue-700">@devedaacademy</a>
                 </div>
               </div>
             </div>
@@ -614,7 +614,7 @@ const App = () => {
               <ul className="space-y-2 text-sm text-slate-400">
                 <li className="flex items-start gap-2"><Phone className="w-4 h-4 mt-0.5" /> {CONTACT.phone}</li>
                 <li className="flex items-start gap-2"><Mail className="w-4 h-4 mt-0.5" /> {CONTACT.email}</li>
-                <li className="flex items-start gap-2"><Instagram className="w-4 h-4 mt-0.5" /> @vyoma_cademy</li>
+                <li className="flex items-start gap-2"><Instagram className="w-4 h-4 mt-0.5" /> @devedaacademy</li>
               </ul>
             </div>
           </div>

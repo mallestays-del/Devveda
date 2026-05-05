@@ -65,7 +65,7 @@ const structuredData = {
   logo: 'https://customer-assets.emergentagent.com/job_2c4eb540-7423-418a-91a3-9287fdd9b7d7/artifacts/rdvsdqgr_WhatsApp%20Image%202026-05-05%20at%201.02.51%20PM.jpeg',
   description: 'Industry-focused Business Analyst training institute with expert trainers, real projects, and placement assistance.',
   sameAs: [
-    'https://www.instagram.com/vyoma_cademy',
+    'https://www.instagram.com/devedaacademy',
     'https://www.linkedin.com/in/deveda-academy-29962b275',
   ],
   address: {
