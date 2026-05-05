@@ -76,7 +76,7 @@ const structuredData = {
     '@type': 'ContactPoint',
     telephone: '+91-8511890947',
     contactType: 'admissions',
-    email: 'vyomacademyy@gmail.com',
+    email: 'devedaacademy@gmail.com',
     availableLanguage: ['English', 'Hindi'],
   },
   offers: {
