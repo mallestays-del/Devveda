@@ -211,7 +211,7 @@ const App = () => {
             <img src={LOGO} alt="Deveda Academy logo" className="w-16 h-16 object-contain" />
             <div className="leading-tight">
               <div className="font-bold text-slate-900 text-lg">Deveda Academy</div>
-              <div className="text-[11px] text-slate-500 -mt-0.5 tracking-wide">Bridge Business &amp; Technology</div>
+              <div className="text-[11px] text-slate-500 -mt-0.5 tracking-wide">Business Analyst Training Institute</div>
             </div>
           </a>
           <ul className="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-700">
@@ -582,7 +582,7 @@ const App = () => {
                 <img src={LOGO} alt="Deveda Academy" className="w-16 h-16 object-contain bg-white p-1 rounded-lg" />
                 <div>
                   <div className="font-bold text-white text-lg">Deveda Academy</div>
-                  <div className="text-[11px] text-slate-400 tracking-wide">Bridge Business &amp; Technology</div>
+                  <div className="text-[11px] text-slate-400 tracking-wide">Business Analyst Training Institute</div>
                 </div>
               </div>
               <p className="mt-4 text-sm text-slate-400 max-w-md leading-relaxed">India&apos;s most trusted Business Analyst Training Institute. Empowering 1,000+ professionals to launch successful BA careers.</p>
