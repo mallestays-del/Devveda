@@ -134,7 +134,7 @@ function LeadForm({ source = 'hero', compact = false, onDone }) {
       if (!res.ok) throw new Error(data.error || 'Something went wrong')
 
       const msg =
-        `*New Demo Booking - Deveda Academy*%0A%0A` +
+        `*New Inquiry - Deveda Academy*%0A%0A` +
         `*Name:* ${encodeURIComponent(form.name)}%0A` +
         `*Phone:* ${encodeURIComponent(form.phone)}%0A` +
         `*Email:* ${encodeURIComponent(form.email)}%0A` +
@@ -158,7 +158,7 @@ function LeadForm({ source = 'hero', compact = false, onDone }) {
       <div className="rounded-xl bg-green-50 border border-green-200 p-6 text-center">
         <CheckCircle2 className="w-10 h-10 text-green-600 mx-auto mb-2" />
         <h4 className="font-semibold text-green-900">Almost there! WhatsApp opened in a new tab.</h4>
-        <p className="text-sm text-green-700 mt-1">Just tap <strong>Send</strong> in WhatsApp to confirm your demo booking. Our counselor will reach out within 24 hours.</p>
+        <p className="text-sm text-green-700 mt-1">Just tap <strong>Send</strong> in WhatsApp to confirm your inquiry. Our counselor will reach out within 24 hours.</p>
       </div>
     )
   }
@@ -187,7 +187,7 @@ function LeadForm({ source = 'hero', compact = false, onDone }) {
       )}
       {error && <p className="text-sm text-red-600">{error}</p>}
       <Button type="submit" disabled={status === 'loading'} className="w-full bg-green-600 hover:bg-green-700 text-white h-11 text-base font-semibold">
-        {status === 'loading' ? 'Submitting...' : 'Book Free Demo'} {status !== 'loading' && <ArrowRight className="w-4 h-4 ml-1" />}
+        {status === 'loading' ? 'Submitting...' : 'Book Inquiry'} {status !== 'loading' && <ArrowRight className="w-4 h-4 ml-1" />}
       </Button>
       <p className="text-xs text-slate-500 text-center">By submitting, you agree to be contacted by Deveda Academy.</p>
     </form>
@@ -220,7 +220,7 @@ const App = () => {
             ))}
           </ul>
           <div className="hidden lg:flex items-center gap-3">
-            <Button onClick={() => scrollTo('contact')} variant="outline" className="border-blue-700 text-blue-700 hover:bg-blue-50">Book Free Demo</Button>
+            <Button onClick={() => scrollTo('contact')} variant="outline" className="border-blue-700 text-blue-700 hover:bg-blue-50">Book Inquiry</Button>
             <Button onClick={() => scrollTo('contact')} className="bg-blue-700 hover:bg-blue-800 text-white">Enroll Now</Button>
           </div>
           <button className="lg:hidden p-2" onClick={() => setNavOpen(!navOpen)} aria-label="Toggle menu">
@@ -260,7 +260,7 @@ const App = () => {
                 Enroll Now <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
               <Button onClick={() => scrollTo('contact')} variant="outline" className="border-blue-700 text-blue-700 hover:bg-blue-50 h-12 text-base px-8">
-                Book Free Demo
+                Book Inquiry
               </Button>
             </div>
             <div className="mt-8 grid grid-cols-3 gap-4 max-w-xl">
