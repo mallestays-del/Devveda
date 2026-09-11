@@ -124,33 +124,36 @@ function LeadForm({ source = 'hero', compact = false, onDone }) {
     e.preventDefault()
     setStatus('loading')
     setError('')
+
+    // Build WhatsApp URL first (works regardless of backend)
+    const msg =
+      `*New Inquiry - Deveda Academy*%0A%0A` +
+      `*Name:* ${encodeURIComponent(form.name)}%0A` +
+      `*Phone:* ${encodeURIComponent(form.phone)}%0A` +
+      `*Email:* ${encodeURIComponent(form.email)}%0A` +
+      (form.message ? `*Message:* ${encodeURIComponent(form.message)}%0A` : '') +
+      `*Source:* ${encodeURIComponent(source)}%0A` +
+      `*Time:* ${encodeURIComponent(new Date().toLocaleString('en-IN'))}`
+    const waUrl = `https://wa.me/918511890947?text=${msg}`
+
+    // Try to save lead to database (best-effort — don't block WhatsApp on failure)
     try {
-      const res = await fetch('/api/leads', {
+      await fetch('/api/leads', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...form, source }),
       })
-      const data = await res.json()
-      if (!res.ok) throw new Error(data.error || 'Something went wrong')
-
-      const msg =
-        `*New Inquiry - Deveda Academy*%0A%0A` +
-        `*Name:* ${encodeURIComponent(form.name)}%0A` +
-        `*Phone:* ${encodeURIComponent(form.phone)}%0A` +
-        `*Email:* ${encodeURIComponent(form.email)}%0A` +
-        (form.message ? `*Message:* ${encodeURIComponent(form.message)}%0A` : '') +
-        `*Source:* ${encodeURIComponent(source)}%0A` +
-        `*Time:* ${encodeURIComponent(new Date().toLocaleString('en-IN'))}`
-      const waUrl = `https://wa.me/918511890947?text=${msg}`
-      window.open(waUrl, '_blank', 'noopener,noreferrer')
-
-      setStatus('success')
-      setForm({ name: '', email: '', phone: '', message: '' })
-      onDone?.()
     } catch (err) {
-      setStatus('error')
-      setError(err.message)
+      // Silently ignore DB errors — WhatsApp is the primary delivery channel
+      console.warn('Lead save failed (WhatsApp will still open):', err?.message)
     }
+
+    // Always open WhatsApp — this is the primary lead delivery method
+    window.open(waUrl, '_blank', 'noopener,noreferrer')
+
+    setStatus('success')
+    setForm({ name: '', email: '', phone: '', message: '' })
+    onDone?.()
   }
 
   if (status === 'success') {
@@ -563,7 +566,7 @@ const App = () => {
           </div>
           <Card className="border-slate-200 shadow-xl">
             <CardContent className="p-6 md:p-8">
-              <h3 className="text-2xl font-bold text-slate-900">Book Your Free Demo</h3>
+              <h3 className="text-2xl font-bold text-slate-900">Book Your Inquiry</h3>
               <p className="mt-1 text-sm text-slate-600">Fill in your details — our counselor will call within 24 hours.</p>
               <div className="mt-6">
                 <LeadForm source="contact-form" />
