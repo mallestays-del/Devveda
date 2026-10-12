@@ -32,6 +32,7 @@ import {
   ArrowRight,
   Linkedin,
   Instagram,
+  Facebook,
   Menu,
   X,
   Clock,
@@ -49,7 +50,8 @@ const CONTACT = {
   phone: '+91 85118 90947',
   phoneRaw: '+918511890947',
   email: 'devedaacademy@gmail.com',
-  instagram: 'https://www.instagram.com/devedaacademy',
+  instagram: 'https://www.instagram.com/deveda_academy',
+  facebook: 'https://www.facebook.com/profile.php?id=61595134629706',
   linkedin: 'https://www.linkedin.com/in/deveda-academy-29962b275',
   whatsapp: 'https://wa.me/918511890947',
 }
@@ -558,7 +560,16 @@ const App = () => {
                 </div>
                 <div>
                   <div className="text-xs text-slate-500 uppercase tracking-wider">Follow Us</div>
-                  <a href={CONTACT.instagram} target="_blank" rel="noopener noreferrer" className="font-semibold text-slate-900 hover:text-blue-700">@devedaacademy</a>
+                  <a href={CONTACT.instagram} target="_blank" rel="noopener noreferrer" className="font-semibold text-slate-900 hover:text-blue-700">@deveda_academy</a>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-xl bg-blue-100 grid place-items-center">
+                  <Facebook className="w-5 h-5 text-blue-600" />
+                </div>
+                <div>
+                  <div className="text-xs text-slate-500 uppercase tracking-wider">Like Us On</div>
+                  <a href={CONTACT.facebook} target="_blank" rel="noopener noreferrer" className="font-semibold text-slate-900 hover:text-blue-700">Facebook</a>
                 </div>
               </div>
             </div>
@@ -596,6 +607,9 @@ const App = () => {
                 <a href={CONTACT.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-pink-600 grid place-items-center transition">
                   <Instagram className="w-4 h-4" />
                 </a>
+                <a href={CONTACT.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-blue-600 grid place-items-center transition">
+                  <Facebook className="w-4 h-4" />
+                </a>
                 <a href={`mailto:${CONTACT.email}`} aria-label="Email" className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-red-600 grid place-items-center transition">
                   <Mail className="w-4 h-4" />
                 </a>
@@ -617,7 +631,7 @@ const App = () => {
               <ul className="space-y-2 text-sm text-slate-400">
                 <li className="flex items-start gap-2"><Phone className="w-4 h-4 mt-0.5" /> {CONTACT.phone}</li>
                 <li className="flex items-start gap-2"><Mail className="w-4 h-4 mt-0.5" /> {CONTACT.email}</li>
-                <li className="flex items-start gap-2"><Instagram className="w-4 h-4 mt-0.5" /> @devedaacademy</li>
+                <li className="flex items-start gap-2"><Instagram className="w-4 h-4 mt-0.5" /> @deveda_academy</li>
               </ul>
             </div>
           </div>
